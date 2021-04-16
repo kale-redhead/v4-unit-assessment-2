@@ -35,7 +35,9 @@ let foods = [
   and then adding the results together. 
 */
 
-//CODE HERE
+foods.forEach(function(element, index, array){
+  foods.calories = (foods.carbs * 4) + (foods.protein * 4) + (foods.fat * 9);
+});
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -80,7 +82,7 @@ const products = [
   Save the copy to a new variable called 'saleProducts'.
 */
 
-//CODE HERE
+const saleProducts = products.map(sale => sale.price - (.25 * sale.price));
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -90,7 +92,7 @@ const products = [
   (Hint: look up the array method 'includes' on MDN)
 */
 
-//CODE HERE
+const blueProducts = products.map(blue => blue.color === 'blue');
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -99,7 +101,7 @@ const products = [
   Save the result to a variable called orderTotal.
 */
 
-//CODE HERE
+const orderTotal = blueProducts.reduce(order => order.price + order.total);
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -215,7 +217,7 @@ const userInfo = {
   using dot notation.
 */
 
-//CODE HERE
+const shouldAlert = 90;
 
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -250,7 +252,27 @@ const userInfo = {
       - create at least 2 kid objects
 */
 
-//CODE HERE
+let person = {
+  name: 'Jimmy',
+  age: 21,
+  jobs: ['painter', 'builder', 'pilot'],
+  birthday: function(){
+    return this.age += 1;
+  },
+  favorites: {
+    color: 'red',
+    number: 12,
+    book: 'Art of War'
+  },
+  kids: [ 
+    {
+        name: 'Kelly', 
+        age: 10}, 
+    {
+        name: 'Tony',
+        age: 8
+  }]
+}
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -276,7 +298,7 @@ const workout = {
 //let context1 = myFunc
 //let context1 = window
 //let context1 = global
-// let context1 = workout
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -289,6 +311,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+let context2 = window
 //let context2 = global
 //let context2 = workout

@@ -8,7 +8,7 @@
     Call the array 'myArr'.
 */
 
-//CODE HERE
+let myArr = [4, 'abc', ['cat', 'dog', 'bird'], 77];
 
 
 ////////////////////PROBLEM 2////////////////////
@@ -20,7 +20,7 @@
 
 const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
 
-//CODE HERE
+let foundZ = nestedLetters[5[2[1]]];
 
 
 ////////////////////PROBLEM 3////////////////////
@@ -36,7 +36,7 @@ const savannah = ['lion', 'zebra', 'lion', 'giraffe']
 const desert = ['rattlesnake', 'coyote']
 //DO NOT EDIT CODE ABOVE
 
-//CODE HERE
+let animals = [...forest, ...ocean, ...savannah, ...desert];
 
 
 /*
@@ -44,7 +44,7 @@ const desert = ['rattlesnake', 'coyote']
     Call the new array 'animalsCopy' and add 'elephant' onto the end of the array.
 */
 
-//CODE HERE
+let animalsCopy = [...animals, 'elephant'];
 
 
 ////////////////////PROBLEM 4////////////////////
