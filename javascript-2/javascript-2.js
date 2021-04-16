@@ -131,7 +131,7 @@ const shippingInfo = {
   that combines the contactInfo and shippingInfo objects.
 */
 
-//CODE HERE
+const helensInfo = Object.assign(contactInfo, shippingInfo);
 
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -140,14 +140,16 @@ const shippingInfo = {
   Overwrite the name property to 'Ellen' and the email address to 'ellen@email.com'.
 */
 
-//CODE HERE
+const ellensInfo = {...helensInfo};
+ellensInfo.name = 'Ellen';
+ellensInfo.email = 'ellen@email.com'
 
 ////////////////////PROBLEM 7////////////////////
 /* 
   Save Ellen's email to a new variable using destructuring.
 */
 
-//CODE HERE
+const {email} = ellensInfo;
 
 ////////////////////PROBLEM 8////////////////////
 /*
@@ -155,7 +157,8 @@ const shippingInfo = {
   from shippingInfo to new variables using destructuring.
 */
 
-//CODE HERE
+const zipCode = zip => shippingInfo.zipCode;
+const state = 0;
 
 //////////////////////////////////PROBLEMS 9-11//////////////////////////////////
 /*
@@ -217,7 +220,7 @@ const userInfo = {
   using dot notation.
 */
 
-const shouldAlert = 90;
+const shouldAlert = userInfo.settings.alerts;
 
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -225,7 +228,7 @@ const shouldAlert = 90;
   using dot and/or bracket notation.
 */
 
-//CODE HERE
+let topic = userInfo.topics[3];
 
 ////////////////////PROBLEM 11////////////////////
 /*
@@ -233,7 +236,7 @@ const shouldAlert = 90;
   gn@rly_c0der_007's 2nd comment using dot/bracket notation.
 */
 
-//CODE HERE
+let commenterId = userInfo.comments[1];
 
 ////////////////////PROBLEM 12////////////////////
 /*
