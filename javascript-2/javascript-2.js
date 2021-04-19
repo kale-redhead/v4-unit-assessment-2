@@ -82,7 +82,10 @@ const products = [
   Save the copy to a new variable called 'saleProducts'.
 */
 
-const saleProducts = products.map(sale => sale.price - (.25 * sale.price));
+const saleProducts = products.map(function(sale){
+  products.price = sale.price - (.25 * sale.price);
+  return sale.name, sale.color, sale.price;
+});
 
 ////////////////////PROBLEM 3////////////////////
 /*

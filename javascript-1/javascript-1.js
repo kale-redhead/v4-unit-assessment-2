@@ -243,14 +243,12 @@ function bark(){
     return this.name + ' says bark!';
 }
 
-bark.call(this.name);
-
 /*
     Invoke the call method on bark, passing in fido as the context
     and saving the result to a variable called fidoSpeak.
 */
 
-const fidoSpeak = new bark('fido');
+const fidoSpeak = bark.call(fido);
   
   
 ////////////////////PROBLEM 13////////////////////
@@ -262,7 +260,7 @@ const fidoSpeak = new bark('fido');
 */
 
 function teachTrick(trick){
-
+    this.tricks.push()
 }
 
 
@@ -271,7 +269,7 @@ function teachTrick(trick){
     Save the result to a variable called 'teachStay'.
 */
 
-//CODE HERE
+const teachStay = 0;
   
   
 ////////////////////PROBLEM 14////////////////////
@@ -293,7 +291,7 @@ function dogIntro(treat, toy){
     and save the result to a variable called fidoIntro.
 */
 
-//CODE HERE
+const fidoIntro = 0;
   
 
 ////////////////////PROBLEM 15////////////////////
